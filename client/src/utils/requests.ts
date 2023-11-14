@@ -7,7 +7,7 @@ import {  alert, close } from '../store/alert/alert.modal.reducer';
 
 
 // base URL
-const baseUrl : string = `https://${process.env.REACT_APP_API_URL}.herokuapp.com`
+const baseUrl : string = `https://bitbill-production.up.railway.app/`
 
 // get rewards
 export const getRewards = async (walletAddress : string| null, dispatch: any, Navigate : any) => {
