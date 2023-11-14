@@ -9,6 +9,9 @@ import {app} from './app';
 
 // creating server
 const server = http.createServer(app);
+const cors = require('cors')
+
+app.use(cors())
 
 //server listen
 server.listen(defaultConfig?.PORT, () => {
