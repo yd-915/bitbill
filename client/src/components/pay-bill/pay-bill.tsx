@@ -92,7 +92,7 @@ const PayBill = () => {
             }, 700)
          }
       // handle payment with btc
-      const newWindow = window.open("https://btcpay0.voltageapp.io/apps/5wMxeDQ3YSs1ws6yU8CDY8HGif3/pos", '_blank', 'noopener,noreferrer')
+      const newWindow = window.open("https://btcpay0.voltageapp.io/apps/2kaqWpEAiUizaRiuzs2XYxnNtmkr/pos", '_blank', 'noopener,noreferrer')
       if (newWindow) newWindow.opener = null
 
             }
