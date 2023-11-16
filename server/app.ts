@@ -11,10 +11,21 @@ import { billRouter } from './routes/bill.router';
 // start an express server
 export const app = express();
 
+
+const corsOptions = {
+  origin: 'https://bitbill.vercel.app',
+  methods: 'GET,HEAD,PUT,PATCH,POST,DELETE',
+  credentials: true, // enable set cookie
+  optionsSuccessStatus: 204,
+};
+
+app.use(cors(corsOptions));
 // middlewares
 app.use(express.json());
 app.use(morgan('combined'));
 app.use(cors());
+
+
 
 //routes
 app.get('/', (req,res) => {
